@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		11A15D0B2299B1A000E593FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D0A2299B1A000E593FA /* AppDelegate.swift */; };
-		11A15D0D2299B1A000E593FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D0C2299B1A000E593FA /* ViewController.swift */; };
+		11A15D0D2299B1A000E593FA /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D0C2299B1A000E593FA /* TrackListViewController.swift */; };
 		11A15D102299B1A000E593FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A15D0E2299B1A000E593FA /* Main.storyboard */; };
 		11A15D122299B1A100E593FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A15D112299B1A100E593FA /* Assets.xcassets */; };
 		11A15D152299B1A100E593FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A15D132299B1A100E593FA /* LaunchScreen.storyboard */; };
+		11A15D1D2299BB6A00E593FA /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D1C2299BB6A00E593FA /* TrackTableViewCell.swift */; };
+		11A15D222299C43D00E593FA /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D212299C43D00E593FA /* Tracks.swift */; };
+		11A15D242299C90600E593FA /* TrackDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15D232299C90600E593FA /* TrackDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11A15D072299B1A000E593FA /* phraseapp-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phraseapp-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A15D0A2299B1A000E593FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11A15D0C2299B1A000E593FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11A15D0C2299B1A000E593FA /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
 		11A15D0F2299B1A000E593FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A15D112299B1A100E593FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A15D142299B1A100E593FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A15D162299B1A100E593FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A15D1C2299BB6A00E593FA /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		11A15D212299C43D00E593FA /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		11A15D232299C90600E593FA /* TrackDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		11A15D092299B1A000E593FA /* phraseapp-demo */ = {
 			isa = PBXGroup;
 			children = (
+				11A15D1E2299C3D000E593FA /* Models */,
+				11A15D1F2299C3D800E593FA /* Views */,
+				11A15D202299C3E100E593FA /* Controllers */,
 				11A15D0A2299B1A000E593FA /* AppDelegate.swift */,
-				11A15D0C2299B1A000E593FA /* ViewController.swift */,
-				11A15D0E2299B1A000E593FA /* Main.storyboard */,
 				11A15D112299B1A100E593FA /* Assets.xcassets */,
-				11A15D132299B1A100E593FA /* LaunchScreen.storyboard */,
 				11A15D162299B1A100E593FA /* Info.plist */,
 			);
 			path = "phraseapp-demo";
+			sourceTree = "<group>";
+		};
+		11A15D1E2299C3D000E593FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A15D212299C43D00E593FA /* Tracks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11A15D1F2299C3D800E593FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11A15D0E2299B1A000E593FA /* Main.storyboard */,
+				11A15D132299B1A100E593FA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11A15D202299C3E100E593FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11A15D0C2299B1A000E593FA /* TrackListViewController.swift */,
+				11A15D1C2299BB6A00E593FA /* TrackTableViewCell.swift */,
+				11A15D232299C90600E593FA /* TrackDetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A15D0D2299B1A000E593FA /* ViewController.swift in Sources */,
+				11A15D0D2299B1A000E593FA /* TrackListViewController.swift in Sources */,
+				11A15D1D2299BB6A00E593FA /* TrackTableViewCell.swift in Sources */,
+				11A15D242299C90600E593FA /* TrackDetailsViewController.swift in Sources */,
 				11A15D0B2299B1A000E593FA /* AppDelegate.swift in Sources */,
+				11A15D222299C43D00E593FA /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
