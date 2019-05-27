@@ -13,15 +13,11 @@ class TrackListViewController: UIViewController {
     
     static let TRACK_DETAIL_SEGUE_ID = "TRACK_DETAIL_SEGUE"
     
-    @IBOutlet weak var trackCountLabel: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        trackCountLabel.text = "\(en_tracks.count) tracks"
-        
+                
         tableView.dataSource = self
         
         tableView.delegate = self
